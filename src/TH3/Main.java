@@ -9,14 +9,14 @@ public class Main {
         int a;
         int b;
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a: ");
+        System.out.println("Nhập a: ");
         a = input.nextInt();
-        System.out.println("Enter b: ");
+        System.out.println("Nhập b: ");
         b = input.nextInt();
         a = Math.abs(a); //Sử dụng hàm abs() để trả về giá trị tuyệt đối (phần dương) của a, b
         b = Math.abs(b);
         if (a == 0 || b == 0) {
-            System.out.println("No greatest common factor");
+            System.out.println("Không có ước chung lớn nhất");
         }
         while (a != b) {
             if (a > b) {
@@ -27,6 +27,6 @@ public class Main {
                 System.out.println("b = " + b);
             }
         }
-        System.out.println("Greatest common factor: " + a);
+        System.out.println("Có ước chung lớn nhất là: " + a);
     }
 }
